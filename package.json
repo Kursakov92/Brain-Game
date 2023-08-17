@@ -11,5 +11,8 @@
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.2"
   }
 }
