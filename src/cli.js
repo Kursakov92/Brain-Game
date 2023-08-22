@@ -6,7 +6,7 @@ console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name?');
 console.log(`Hello, ${userName}!`);
 for (let i = 0; i < 3; i += 1) {
-  const result = evenGame();
+  const result = calc();
   if (result) {
     console.log('Correct!');
     if (i === 2) {

@@ -23,6 +23,7 @@
     "prettier": "^3.0.2"
   },
   "dependencies": {
+    "brain-games": "^1.1.5",
     "readline-sync": "^1.4.10"
   }
 }
