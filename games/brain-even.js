@@ -1,4 +1,6 @@
 import readlineSync from 'readline-sync';
+import playGame from '../src/index.js';
+import greeting from '../src/greeting.js';
 
 function isEven(n) {
   return n % 2 === 0;
@@ -15,21 +17,6 @@ function evenGame() {
 }
 
 export default function brainEven() {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${userName}!`);
-
-  for (let i = 0; i < 3; i += 1) {
-    const result = evenGame();
-    if (result) {
-      console.log('Correct!');
-      if (i === 2) {
-        console.log(`Congratulations, ${userName}`);
-      }
-    }
-    if (!result) {
-      console.log(`Let's try again ${userName}!`);
-      break;
-    }
-  }
+  const userName = greeting();
+  playGame(evenGame, userName);
 }

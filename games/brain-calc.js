@@ -31,6 +31,6 @@ function calc() {
 }
 
 export default function brainCalc() {
-  greeting();
-  playGame(calc);
+  const userName = greeting();
+  playGame(calc, userName);
 }

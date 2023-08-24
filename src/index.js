@@ -1,6 +1,7 @@
-export default function playGame(game) {
+export default function playGame(game, name) {
   for (let i = 0; i < 3; i += 1) {
     const result = game();
+    const userName = name;
     if (result) {
       console.log('Correct!');
       if (i === 2) {
