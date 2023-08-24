@@ -24,7 +24,10 @@ function calc() {
       break;
     default:
   }
-  return answer === correctAnswer;
+  const result = {
+    isCorrect: answer === correctAnswer,
+  };
+  return result;
 }
 
 export default function brainCalc() {

@@ -18,7 +18,12 @@ function gcd() {
   console.log('Find the greatest common divisor of given numbers.');
   const answer = readlineSync.question(`Question: ${number1}  ${number2} `);
   console.log(`Your answer: ${answer}`);
-  return answer === correctAnswer;
+  const result = {
+    isCorrect: answer === correctAnswer,
+    answer,
+    correctAnswer,
+  };
+  return result;
 }
 
 export default function brainGcd() {

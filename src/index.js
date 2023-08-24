@@ -1,15 +1,16 @@
-export default function playGame(game, name) {
+export default function playGame(game, name, gameVariant = 0) {
   for (let i = 0; i < 3; i += 1) {
-    const result = game();
+    const { isCorrect, answer, correctAnswer } = game();
     const userName = name;
-    if (result) {
+    if (isCorrect) {
       console.log('Correct!');
       if (i === 2) {
         console.log(`Congratulations, ${userName}`);
       }
     }
-    if (!result) {
-      console.log(`Let's try again ${userName}!`);
+    if (!isCorrect) {
+      const variant = gameVariant === 0 ? `Let's try again ${userName}!` : `${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`;
+      console.log(variant);
       break;
     }
   }
