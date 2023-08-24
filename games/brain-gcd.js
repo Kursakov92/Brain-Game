@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
 import playGame from '../src/index.js';
-import greeting from '../src/greeting.js';
 import randomNumber from '../src/randomNumber.js';
 
 function findGcd(num1, num2) {
@@ -22,6 +21,5 @@ function gcd() {
 }
 
 export default function brainGcd() {
-  const userName = greeting();
-  playGame(gcd, userName);
+  playGame(gcd);
 }

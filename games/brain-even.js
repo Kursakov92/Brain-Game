@@ -1,13 +1,11 @@
 import readlineSync from 'readline-sync';
 import playGame from '../src/index.js';
-import greeting from '../src/greeting.js';
+import randomNumber from '../src/randomNumber.js';
 
 function isEven(n) {
   return n % 2 === 0;
 }
-function randomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
+
 function evenGame() {
   const number = randomNumber(1, 99);
   console.log(`Answer "yes" if the number is even, otherwise answer "no" - ${number}`);
@@ -17,6 +15,5 @@ function evenGame() {
 }
 
 export default function brainEven() {
-  const userName = greeting();
-  playGame(evenGame, userName);
+  playGame(evenGame);
 }

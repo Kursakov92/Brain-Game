@@ -1,7 +1,9 @@
-export default function playGame(game, name) {
+import greeting from './greeting.js';
+
+export default function playGame(game) {
   for (let i = 0; i < 3; i += 1) {
     const result = game();
-    const userName = name;
+    const userName = greeting();
     if (result) {
       console.log('Correct!');
       if (i === 2) {
