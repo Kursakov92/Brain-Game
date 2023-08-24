@@ -16,6 +16,6 @@ function evenGame() {
 }
 
 export default function brainEven() {
-  greeting();
-  playGame(evenGame);
+  const name = greeting();
+  playGame(evenGame, name);
 }
