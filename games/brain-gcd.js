@@ -28,5 +28,5 @@ function gcd() {
 
 export default function brainGcd() {
   const name = greeting();
-  playGame(gcd, name);
+  playGame(gcd, name, 1);
 }
