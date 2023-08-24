@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 import playGame from '../src/index.js';
 import randomNumber from '../src/randomNumber.js';
+import greeting from '../src/greeting.js';
 
 function calc() {
   let correctAnswer;
@@ -27,5 +28,6 @@ function calc() {
 }
 
 export default function brainCalc() {
+  greeting();
   playGame(calc);
 }

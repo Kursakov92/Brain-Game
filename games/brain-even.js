@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 import playGame from '../src/index.js';
 import randomNumber from '../src/randomNumber.js';
+import greeting from '../src/greeting.js';
 
 function isEven(n) {
   return n % 2 === 0;
@@ -15,5 +16,6 @@ function evenGame() {
 }
 
 export default function brainEven() {
+  greeting();
   playGame(evenGame);
 }
