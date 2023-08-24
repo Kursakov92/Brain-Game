@@ -1,10 +1,7 @@
 import readlineSync from 'readline-sync';
 import playGame from '../src/index.js';
 import greeting from '../src/greeting.js';
-
-function randomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
+import randomNumber from '../src/randomNumber.js';
 
 function calc() {
   let correctAnswer;
