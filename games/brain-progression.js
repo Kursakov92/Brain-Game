@@ -14,9 +14,9 @@ function progression() {
   const arrWithoutElem = arrayProgression.concat([]);
   arrWithoutElem[secretElement] = '..';
   const joinProgression = arrWithoutElem.join(' ');
-  const correctAnswer = arrayProgression[secretElement];
+  const correctAnswer = String(arrayProgression[secretElement]);
   console.log('What number is missing in the progression?');
-  const answer = readlineSync.question(`Question: ${joinProgression}`);
+  const answer = readlineSync.question(`Question: ${joinProgression}  `);
   console.log(`Your answer: ${answer}`);
   const result = {
     isCorrect: answer === correctAnswer,

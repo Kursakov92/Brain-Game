@@ -9,7 +9,7 @@ export default function playGame(game, name, gameVariant = 0) {
       }
     }
     if (!isCorrect) {
-      const variant = gameVariant === 0 ? `Let's try again ${userName}!` : `${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\n Let's try again ${userName}!`;
+      const variant = gameVariant === 0 ? `Let's try again ${userName}!` : `${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again ${userName}!`;
       console.log(variant);
       break;
     }
