@@ -1,4 +1,6 @@
 import readlineSync from 'readline-sync';
+import playGame from '../src/index.js';
+import greeting from '../src/greeting.js';
 
 function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
@@ -29,21 +31,6 @@ function calc() {
 }
 
 export default function brainCalc() {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${userName}!`);
-  
-  for (let i = 0; i < 3; i += 1) {
-    const result = calc();
-    if (result) {
-      console.log('Correct!');
-      if (i === 2) {
-        console.log(`Congratulations, ${userName}`);
-      }
-    }
-    if (!result) {
-      console.log(`Let's try again ${userName}!`);
-      break;
-    }
-  }
+  greeting();
+  playGame(calc);
 }
