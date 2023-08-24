@@ -8,7 +8,7 @@ function progression() {
   const step = randomNumber(1, 5);
   const arrayProgression = [startNumber];
   for (let i = 1; i < 10; i += 1) {
-    arrayProgression.push(step * (i + 1));
+    arrayProgression.push(startNumber + (step * (i)));
   }
   const secretElement = randomNumber(0, 9);
   const arrWithoutElem = arrayProgression.concat([]);
