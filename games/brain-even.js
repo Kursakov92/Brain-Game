@@ -9,7 +9,7 @@ function isEven(n) {
 
 function evenGame() {
   const number = randomNumber(1, 99);
-  console.log(`Answer "yes" if the number is even, otherwise answer "no" - ${number}`);
+  console.log(`Answer "yes" if the number is even, otherwise answer "no".\nQuestion: ${number}`);
   const answer = readlineSync.question('Your answer: ');
   const correctAnswer = isEven(number) ? 'yes' : 'no';
   const result = {
