@@ -28,5 +28,5 @@ function progression() {
 
 export default function brainProgression() {
   const name = greeting();
-  playGame(progression, name, 1);
+  playGame(progression, name);
 }

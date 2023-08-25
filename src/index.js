@@ -1,4 +1,4 @@
-export default function playGame(game, name, gameVariant = 0) {
+export default function playGame(game, name) {
   for (let i = 0; i < 3; i += 1) {
     const { isCorrect, answer, correctAnswer } = game();
     const userName = name;
@@ -9,8 +9,7 @@ export default function playGame(game, name, gameVariant = 0) {
       }
     }
     if (!isCorrect) {
-      const variant = gameVariant === 0 ? `Let's try again ${userName}!` : `${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again ${userName}!`;
-      console.log(variant);
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${userName}!`);
       break;
     }
   }
