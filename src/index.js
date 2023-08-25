@@ -5,7 +5,7 @@ export default function playGame(game, name, gameVariant = 0) {
     if (isCorrect) {
       console.log('Correct!');
       if (i === 2) {
-        console.log(`Congratulations, ${userName}`);
+        console.log(`Congratulations, ${userName}!`);
       }
     }
     if (!isCorrect) {
