@@ -26,6 +26,8 @@ function calc() {
   }
   const result = {
     isCorrect: answer === correctAnswer,
+    answer,
+    correctAnswer,
   };
   return result;
 }

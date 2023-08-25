@@ -14,6 +14,8 @@ function evenGame() {
   const correctAnswer = isEven(number) ? 'yes' : 'no';
   const result = {
     isCorrect: answer === correctAnswer,
+    answer,
+    correctAnswer,
   };
   return result;
 }

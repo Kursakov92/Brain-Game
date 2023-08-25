@@ -17,6 +17,8 @@ function primeGame() {
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   const result = {
     isCorrect: answer === correctAnswer,
+    answer,
+    correctAnswer,
   };
   return result;
 }
