@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import playGame from '../src/index.js';
-import randomNumber from '../src/randomNumber.js';
-import greeting from '../src/greeting.js';
+import playGame from '../index.js';
+import randomNumber from '../randomNumber.js';
+import greeting from '../greeting.js';
 
 function calc() {
   let correctAnswer;
