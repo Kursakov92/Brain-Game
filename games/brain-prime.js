@@ -12,7 +12,7 @@ function isPrime(num) {
 
 function primeGame() {
   const number = randomNumber(1, 99);
-  console.log(`Answer "yes" if given number is prime. Otherwise answer "no" - ${number}`);
+  console.log(`Answer "yes" if given number is prime. Otherwise answer "no". \nQuestion: ${number}`);
   const answer = readlineSync.question('Your answer: ');
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   const result = {
