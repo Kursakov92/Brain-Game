@@ -16,7 +16,7 @@ function gcd() {
   const number2 = randomNumber(1, 99);
   const correctAnswer = String(findGcd(number1, number2));
   console.log('Find the greatest common divisor of given numbers.');
-  const answer = readlineSync.question(`Question: ${number1}  ${number2} `);
+  const answer = readlineSync.question(`Question: ${number1} ${number2}`);
   console.log(`Your answer: ${answer}`);
   const result = {
     isCorrect: answer === correctAnswer,
