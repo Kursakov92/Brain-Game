@@ -4,9 +4,9 @@ export default function playGame(game, name) {
     const userName = name;
     if (isCorrect) {
       console.log('Correct!');
-      if (i === 2) {
-        console.log(`Congratulations, ${userName}!`);
-      }
+    }
+    if (i === 2) {
+      console.log(`Congratulations, ${userName}!`);
     }
     if (!isCorrect) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${userName}!`);
