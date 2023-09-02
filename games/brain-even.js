@@ -1,17 +1,14 @@
-import readlineSync from 'readline-sync';
 import playGame from '../src/index.js';
-import randomNumber from '../src/randomNumber.js';
 import greeting from '../src/greeting.js';
+import askQuestion from '../src/askQuestion.js';
 
 function isEven(n) {
   return n % 2 === 0;
 }
 
 function evenGame() {
-  const number = randomNumber(1, 99);
-  console.log(`Answer "yes" if the number is even, otherwise answer "no".\nQuestion: ${number}`);
-  const answer = readlineSync.question('Your answer: ');
-  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  const question = 'Answer "yes" if the number is even, otherwise answer "no".\nQuestion:';
+  const { answer, correctAnswer } = askQuestion(question, isEven);
   const result = {
     isCorrect: answer === correctAnswer,
     answer,

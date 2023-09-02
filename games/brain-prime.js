@@ -1,7 +1,6 @@
-import readlineSync from 'readline-sync';
 import playGame from '../src/index.js';
-import randomNumber from '../src/randomNumber.js';
 import greeting from '../src/greeting.js';
+import askQuestion from '../src/askQuestion.js';
 
 function isPrime(num) {
   for (let i = 2; i < num; i += 1) {
@@ -11,10 +10,8 @@ function isPrime(num) {
 }
 
 function primeGame() {
-  const number = randomNumber(1, 99);
-  console.log(`Answer "yes" if given number is prime. Otherwise answer "no". \nQuestion: ${number}`);
-  const answer = readlineSync.question('Your answer: ');
-  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+  const question = '`Answer "yes" if given number is prime. Otherwise answer "no". \nQuestion:';
+  const { answer, correctAnswer } = askQuestion(question, isPrime);
   const result = {
     isCorrect: answer === correctAnswer,
     answer,
