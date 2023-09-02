@@ -1,4 +1,4 @@
-function checkAnswer(isCorrect, answer, round, name, correctAnswer) {
+function checkAnswer({ isCorrect, answer, correctAnswer }, round, name) {
   if (isCorrect) {
     console.log('Correct!');
   }
@@ -12,9 +12,9 @@ function checkAnswer(isCorrect, answer, round, name, correctAnswer) {
 
 export default function playGame(game, name) {
   for (let i = 0; i < 3; i += 1) {
-    const { isCorrect, answer, correctAnswer } = game();
+    const result = game();
     const userName = name;
-    checkAnswer(isCorrect, answer, i, userName, correctAnswer);
-    if (!isCorrect) break;
+    checkAnswer(result, i, userName);
+    if (!result.isCorrect) break;
   }
 }
