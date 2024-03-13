@@ -4,10 +4,48 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/7a32facf3898fcdeccf5/maintainability)](https://codeclimate.com/github/Kursakov92/frontend-project-44/maintainability)
 
-[![asciicast](https://asciinema.org/a/vuF9dskE9CRwpyfenk7G5gwl4.svg)](https://asciinema.org/a/vuF9dskE9CRwpyfenk7G5gwl4)
+🎉 CLI application represents 5 math mini games
 
-[![asciicast](https://asciinema.org/a/vIul6bESa24KEN3iFlwUTpe9f.svg)](https://asciinema.org/a/vIul6bESa24KEN3iFlwUTpe9f)
+## Installation & Run
+```
+$ make install
+```
+run from the project root:
+```
+$ make brain-calc
+$ make brain-even
+$ make brain-gcd
+$ make brain-progression
+```
 
-[![asciicast](https://asciinema.org/a/YM4WSCqMfbegb8ASa61bLD6ak.svg)](https://asciinema.org/a/YM4WSCqMfbegb8ASa61bLD6ak)
+## Features
+- math-calc to calculate arithmetic expressions (+/ -/ *)
+- brain-even to guess if given number is even
+- brain-prime to guess if given number is prime
+- brain-gcd to find the greatest common divisor of given numbers
+- brain progression to guess what number is missing in the progression
 
-[![asciicast](https://asciinema.org/a/rod1brdxdP0GRbqgSMOUNchCY.svg)](https://asciinema.org/a/rod1brdxdP0GRbqgSMOUNchCY)
+## Overview
+This app is my learning project from the [Hexlet Frontend Developer course](https://hexlet.io) aimed to get hands-on experience with the following topics:
+- Programming fundamentals: functions, conditions, recursion, loops, arrays
+- Setup working environment: Node.js, REPL, VSCode, ESLint, [Airbnb JS Style Guide](https://github.com/airbnb/javascript)
+- CLI: navigation, interface, system-level variables, grep, pipeline, chmod, chown, file management
+- git and GitHub: create/clone/pull repo, commit/amend/revert/reset, stash, gitignore
+- [npm](https://www.npmjs.com/): dependencies, npx, install the app as global package, npm publish and link
+- CI: [GitHub Actions](https://github.com/ola-9/frontend-project-lvl1/blob/main/.github/workflows/linter.yml)
+
+## Demo
+### 💥 Brain-progression
+[![asciicast](https://asciinema.org/a/FIf6IPZsbRIx9ItkGSg44oLGt.svg)](https://asciinema.org/a/FIf6IPZsbRIx9ItkGSg44oLGt)
+
+### 💥 Brain-gcd
+[![asciicast](https://asciinema.org/a/bzyEmSZGUyqwFMt6EHMn81xvh.svg)](https://asciinema.org/a/bzyEmSZGUyqwFMt6EHMn81xvh)
+
+### 💥 Brain-prime
+[![asciicast](https://asciinema.org/a/NtlCVrGd6t2UvKFHzy3R8CiG2.svg)](https://asciinema.org/a/NtlCVrGd6t2UvKFHzy3R8CiG2)
+
+### 💥 Brain-even
+[![asciicast](https://asciinema.org/a/Kdd0H4g5oONyColO5QdViHGY9.svg)](https://asciinema.org/a/Kdd0H4g5oONyColO5QdViHGY9)
+
+### 💥 Brain-calc
+[![asciicast](https://asciinema.org/a/GqaxC9x05HvNS5PggucYmwa2B.svg)](https://asciinema.org/a/GqaxC9x05HvNS5PggucYmwa2B)
